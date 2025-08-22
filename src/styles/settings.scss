@@ -1,0 +1,44 @@
+/* ==========================
+   SETTINGS SCSS
+   ========================== */
+
+/* === BASE SIZE === */
+$base-size: 8px; // główna jednostka (skalowanie spacingu i fontów)
+
+/* === COLORS === */
+$color-bg: #2c2f38; // tło strony
+$color-text: #fff; // podstawowy tekst
+$color-text-light: #e0e0e0; // jaśniejszy tekst (np. paragrafy)
+$color-border: #ccc; // ramki inputów, buttonów
+$color-button-bg: #e0e0e0; // tło buttona
+$color-button-text: #333; // tekst buttona
+
+/* dodatkowe kolory używane w buttonach/inputach */
+$color-light: #ffffff; // jasny kolor dla tekstów i buttonów
+$color-dark: #000000; // ciemny kolor do borderów lub hover
+$color-success: #4caf50; // zielony przycisk akcji
+$color-warning: #f44336; // czerwony przycisk "niebezpieczny"
+
+/* === FONT === */
+$font-main: 'Arial', 'Helvetica', sans-serif;
+$font-text: $font-main; // główny font dla inputów, buttonów, paragrafów
+
+/* === FONT SIZES === */
+$font-size-base: $base-size * 2; // 16px = paragraf, input
+$font-size-h1: $base-size * 4; // 32px = nagłówek główny
+$font-size-h2: $base-size * 3; // 24px = sekcje Books/Movies/Games
+$font-size-header-h2: $base-size * 2; // 16px = "Things to do soon"
+
+/* === SPACING === */
+$space-xs: $base-size * 0.5; // 4px
+$space-s: $base-size; // 8px
+$space-m: $base-size * 2; // 16px
+$space-l: $base-size * 3; // 24px
+$space-xl: $base-size * 4; // 32px
+
+/* === BORDER RADIUS === */
+$radius-s: $base-size * 0.5; // 4px (małe zaokrąglenia)
+$radius: $radius-s; // ogólny border-radius
+
+/* === TRANSITIONS === */
+$transition: all 0.3s ease; // animacje przy hoverach/focusach

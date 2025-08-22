@@ -1,0 +1,34 @@
+@import './settings.scss';
+
+body {
+  background-color: $color-bg;
+  color: $color-text;
+  font-family: $font-main;
+  padding: $base-size * 2;
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* SearchForm */
+form {
+  margin: ($base-size) 0 ($base-size * 2); // 0.5rem 0 1rem
+}
+
+/* 🔹 Ten header od "Things to do soon" */
+header h2 {
+  font-size: $base-size * 2; // 16px ≈ 1rem
+  font-weight: normal;
+  margin: $base-size 0; // 0.5rem 0
+  color: $color-text;
+
+  span {
+    font-weight: bold; // bold tylko dla "soon"
+  }
+}
+
+/* 🔹 Sekcje (Books, Movies, Games) */
+section h2 {
+  font-size: $base-size * 2.4; // 1.2rem ≈ 19px
+  font-weight: 700;
+  margin-top: $base-size * 2; // 1rem
+}
