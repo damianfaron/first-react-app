@@ -1,27 +1,23 @@
 @import './settings.scss';
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: $color-bg;
-  color: $color-text;
-  padding: $base-size * 2; // 16px ≈ 1rem
-  line-height: 1.5;
-  font-family: $font-main;
-  text-align: left;
+  margin: 0;
+  padding: 0;
+  background: $color-dark;
+  font-family: $font-text;
+  font-size: ($base-size * 1.1);
+  color: $color-light;
+  letter-spacing: 0.5px;
 }
 
-/* Hero */
-div {
-  margin-bottom: $base-size * 2; // 16px ≈ 1rem
-
-  h1 {
-    font-size: $font-size-h1; // 2rem
-    font-weight: 700;
-    margin-bottom: $base-size; // 8px ≈ 0.5rem
-  }
-
-  p {
-    font-size: $font-size-base; // 1rem
-    color: $color-text-light;
-    margin: $base-size 0; // 8px ≈ 0.5rem
-  }
+:global(.container) {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
+
+@import "./typography.scss";
