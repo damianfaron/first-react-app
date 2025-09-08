@@ -12,10 +12,7 @@ const ColumnForm = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
-    dispatch({ type: 'ADD_COLUMN', payload: { title, icon } });
-
-    // props.action({ title: title, icon: icon });
+    dispatch({ type: 'ADD_CARD', payload: { title } });
 
     setTitle('');
     setIcon('');

@@ -1,6 +1,5 @@
 import { createStore } from 'redux';
 import initialState from './initialState';
-// import { useDispatch } from 'react-redux';
 import shortid from 'shortid';
 
 const reducer = (state, action) => {
@@ -10,22 +9,15 @@ const reducer = (state, action) => {
         ...state,
         columns: [...state.columns, { ...action.payload, id: shortid() }],
       };
-
     case 'ADD_CARD':
       return {
         ...state,
-        cards: [...state.cards, { id: shortid(), ...action.payload }],
+        cards: [...state.cards, { ...action.payload, id: shortid() }],
       };
-
     default:
       return state;
   }
 };
-
-// const initialState = {
-//   columns: [],
-// };
-
 const store = createStore(
   reducer,
   initialState,
