@@ -33,6 +33,15 @@
 
 .cards {
   padding: math.div($base-size, 2) 0;
+  text-align: center;
+  list-style: none;
+  gap: $base-size;
+  li {
+    border: 1px solid lighten($color-dark, 60%);
+    border-radius: 12px;
+    margin-top: 10px;
+    padding: $base-size - 5px;
+  }
 }
 
 @media (max-width: 767px) {

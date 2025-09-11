@@ -4,7 +4,7 @@
   background-color: darken($color-dark, 3%);
   position: sticky;
   top: 0;
-  padding: 10px 0; // lepsza kontrola wysokości paska 
+  padding: 10px 0; // lepsza kontrola wysokości paska
 }
 
 .wrapper {
@@ -43,9 +43,10 @@
       color: green;
     }
 
-    &.active {
+    &.linkActive {
       font-weight: bold;
-      border-bottom: 2px solid $color-light;
+      border-bottom: 2px solid $color-warning;
+      color: $color-warning;
     }
   }
 }
