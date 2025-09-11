@@ -1,0 +1,51 @@
+@import '../../styles/settings.scss';
+
+.nav {
+  background-color: darken($color-dark, 3%);
+  position: sticky;
+  top: 0;
+  padding: 10px 0; // lepsza kontrola wysokości paska 
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+}
+.icon {
+  color: $color-light;
+  text-decoration: none;
+  cursor: pointer;
+
+  span {
+    color: inherit; // ikona przejmie kolor rodzica
+  }
+
+  &:hover {
+    color: green;
+  }
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+
+  li a {
+    color: $color-light;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: green;
+    }
+
+    &.active {
+      font-weight: bold;
+      border-bottom: 2px solid $color-light;
+    }
+  }
+}
