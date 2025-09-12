@@ -31,6 +31,16 @@ export const getColumnsByList = ({ columns }, listId) =>
 export const getAllLists = (state) => state.lists;
 // add new list
 export const addList = (payload) => ({ type: 'ADD_LIST', payload });
+// toggle card
+export const toggleCardFavorite = (payload) => ({
+  type: 'TOGGLE_CARD_FAVORITE',
+  payload,
+});
+
+// selector to dowload fav card:
+export const getFavoriteCards = ({ cards }) =>
+  cards.filter((card) => card.isFavorite);
+
 const reducer = (state, action) => {
   switch (action.type) {
     case 'ADD_COLUMN':
@@ -52,6 +62,15 @@ const reducer = (state, action) => {
       return {
         ...state,
         lists: [...state.lists, { ...action.payload, id: shortid() }],
+      };
+    case 'TOGGLE_CARD_FAVORITE':
+      return {
+        ...state,
+        cards: state.cards.map((card) =>
+          card.id === action.payload
+            ? { ...card, isFavorite: !card.isFavorite }
+            : card
+        ),
       };
     default:
       return state;

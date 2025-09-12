@@ -1,6 +1,5 @@
 // @import '../../styles/settings.scss';
 
-
 // .hero {
 //   padding: $base-size;
 // }
@@ -11,3 +10,16 @@
 //   font-size: ($base-size * 3);
 //   text-transform: uppercase;
 // }
+
+.cards {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.noCards {
+  color: #888;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
