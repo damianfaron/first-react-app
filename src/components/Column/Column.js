@@ -8,7 +8,7 @@ const Column = (props) => {
   // find items in page take searchString
   const cards = useSelector((state) => getFilteredCards(state, props.id));
   // const cards = useSelector((state) => state.cards);
-  console.log('Column render');
+  // console.log('Column render');
   // const cards = useSelector((state) =>
   //   state.cards.filter(
   //     (card) =>
